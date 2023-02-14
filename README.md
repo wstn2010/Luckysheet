@@ -9,6 +9,9 @@
 
 </div>
 
+# this fork
+- Store.columnNames: string array: set user defined column names
+
 # Luckysheet 3.x has been renamed to [Univer](https://github.com/dream-num/univer)
 
 English| [简体中文](./README-zh.md)
