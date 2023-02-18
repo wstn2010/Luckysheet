@@ -82,6 +82,7 @@ luckysheet.create = function (setting) {
     Store.defaultSheetNameMaxLength = extendsetting.defaultSheetNameMaxLength;
     Store.fontList = extendsetting.fontList;
     Store.columnNames = extendsetting.columnNames;
+    Store.columnHeaderColor = extendsetting.columnHeaderColor;
     server.gridKey = extendsetting.gridKey;
     server.loadUrl = extendsetting.loadUrl;
     server.updateUrl = extendsetting.updateUrl;

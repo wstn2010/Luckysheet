@@ -293,7 +293,7 @@ function luckysheetDrawgridColumnTitle(scrollWidth, drawWidth, offsetLeft) {
 
         }
         else {
-            luckysheetTableContent.fillStyle = "#ffffff";
+            luckysheetTableContent.fillStyle = (Store.columnHeaderColor) ? Store.columnHeaderColor : "#ffffff";
             luckysheetTableContent.fillRect(
                 (start_c + offsetLeft - 1) , 
                 0, 
