@@ -280,7 +280,8 @@ function luckysheetDrawgridColumnTitle(scrollWidth, drawWidth, offsetLeft) {
         // if(end_c > scrollWidth + drawWidth+1){
         //     break;
         // }
-        let abc = (Store.columnNames && Store.columnNames.length > c) ? Store.columnNames[c] : chatatABC(c);
+        const columnNames = Store.columnNames && Store.columnNames.length > Store.currentSheetIndex ? Store.columnNames[Store.currentSheetIndex] : null;
+        let abc = (columnNames && columnNames.length > c) ? columnNames[c] : chatatABC(c);
         //列标题单元格渲染前触发，return false 则不渲染该单元格
         if(!method.createHookFunction("columnTitleCellRenderBefore", abc, {
             c:c,
